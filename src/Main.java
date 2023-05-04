@@ -6,8 +6,10 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         double temperaturaEmCelsius = 38.4;
         double temperaturaEmFahrenheit = (temperaturaEmCelsius * 1.8) + 32;
-        System.out.println(("Temperatura em Celsius: %fº\n" +
-                            "Temperatura em Fahrenheit %fº\n").formatted(temperaturaEmCelsius, temperaturaEmFahrenheit));
+        System.out.println("""
+                Temperatura em Celsius: %fº
+                Temperatura em Fahrenheit %fº
+                """.formatted(temperaturaEmCelsius, temperaturaEmFahrenheit));
         int temperaturaEmFahrenheitInteira = (int) temperaturaEmFahrenheit;
         System.out.println("Temperatura em Fahrenheit Inteira: " + temperaturaEmFahrenheitInteira);
 
